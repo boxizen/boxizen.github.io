@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2015/05/03/mui/</loc>
+    
+    <lastmod>2018-07-01T03:25:40.191Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2016/04/05/effective_javascript/</loc>
     
     <lastmod>2018-07-01T02:59:21.310Z</lastmod>
@@ -33,13 +40,6 @@
     <loc>http://yoursite.com/2014/08/07/nginx/</loc>
     
     <lastmod>2018-07-01T02:58:43.975Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2015/05/03/mui/</loc>
-    
-    <lastmod>2018-07-01T02:58:39.161Z</lastmod>
     
   </url>
   
