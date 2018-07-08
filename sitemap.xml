@@ -2,23 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/photo/index.html</loc>
+    <loc>http://yoursite.com/2018/07/07/kube_lego/</loc>
     
-    <lastmod>2018-07-01T10:30:26.311Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2017/08/22/vue_erp/</loc>
-    
-    <lastmod>2018-07-01T07:24:19.429Z</lastmod>
+    <lastmod>2018-07-08T06:44:38.581Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://yoursite.com/2017/12/07/spider/</loc>
     
-    <lastmod>2018-07-01T07:22:50.454Z</lastmod>
+    <lastmod>2018-07-07T06:59:13.161Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2017/08/22/vue_erp/</loc>
+    
+    <lastmod>2018-07-02T14:17:57.036Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/photo/index.html</loc>
+    
+    <lastmod>2018-07-01T10:30:26.311Z</lastmod>
     
   </url>
   
