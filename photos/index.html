@@ -1,4 +1,4 @@
-<!-- build time:Sun Jul 15 2018 14:44:13 GMT+0800 (CST) --><!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author" content="boxi"><meta name="google-site-verification" content="iOm73y6vS5qme_s6tWGOVE1l5iATBiNi7Ye7J4dv68g"><meta name="baidu-site-verification" content="9BXA7j00i6"><title>boxi's box</title><meta name="description" content="A Blog Powered By Hexo"><meta name="keywords" content="咔擦 by boxi"><meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="short icon" href="/img/favicon.png" type="image/x-icon"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"></head><style>#cnzz_stat_icon_1274080808{display:none}</style><body>咔擦<script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.9.0/jquery.min.js"></script><script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.7.3/dist/av-min.js"></script><script type="text/javascript">const logger = console;
+<!-- build time:Sun Jul 15 2018 15:08:00 GMT+0800 (CST) --><!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author" content="boxi"><meta name="google-site-verification" content="iOm73y6vS5qme_s6tWGOVE1l5iATBiNi7Ye7J4dv68g"><meta name="baidu-site-verification" content="9BXA7j00i6"><title>boxi's box</title><meta name="description" content="A Blog Powered By Hexo"><meta name="keywords" content="咔擦 by boxi"><meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="short icon" href="/img/favicon.png" type="image/x-icon"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"></head><style>#cnzz_stat_icon_1274080808{display:none}img{max-width:95%;margin:10px}</style><body>咔擦<script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.9.0/jquery.min.js"></script><script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.7.3/dist/av-min.js"></script><script type="text/javascript">const logger = console;
     var { Query, User } = AV;
     AV.init('bUTfY8SwOBitSS8uqiV0vG0I-gzGzoHsz', 'N6bRxFzuVXEBBdX96fGb1i4e');    
     let deffer = $.Deferred();
@@ -6,33 +6,30 @@
     let page = {
       init () {
         page.load(0, 5);
-        deffer.done((photos) => {
-          let gallery = '';
-          photos.forEach(photo => {
-            gallery += `<img style="display: block;width: 500px;" src="${photo.url}" />`
-          })
-          logger.log(gallery);
-          $('body').html(gallery);
-        })
-        .fail(() => {
-          alert('network error')
-        })
       },
-      load (start, limit) {                
+      load (start, limit) {         
         photoQuery.descending('name');
         photoQuery.skip(start);
         photoQuery.limit(limit);        
         photoQuery.find().then((photos) => {
-          logger.log(photos);
           let arr = [];
-          arr.push({
-            name: photos.attributes.name,
-            url: photos.attributes.url
-          });
-          deffer.resolve(arr);
+          photos.forEach(item => {
+            arr.push({
+              name: item.attributes.name,
+              url: item.attributes.url
+            });
+          })          
+          page.renderImg(arr)
         }, (err) => {
-          deffer.reject();
         });
-      }      
+      },
+      renderImg (photos) {
+        let gallery = '';
+        photos.forEach(photo => {
+          gallery += `<img style="display: block;width: 500px;" src="${photo.url}" />`
+        })
+        logger.log(gallery);
+        $('body').html(gallery);
+      }
     }
     page.init();</script><script type="text/javascript">var cnzz_protocol="https:"==document.location.protocol?" https://":" http://";document.write(unescape("%3Cspan id='cnzz_stat_icon_1274080808'%3E%3C/span%3E%3Cscript src='"+cnzz_protocol+"s13.cnzz.com/z_stat.php%3Fid%3D1274080808%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"))</script></body></html><!-- rebuild by neat -->
