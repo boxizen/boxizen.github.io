@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://boxizen.github.io/photos/index.html</loc>
+    
+    <lastmod>2019-01-12T01:32:44.866Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://boxizen.github.io/2018/10/30/compilers_in_front_end/</loc>
     
     <lastmod>2019-01-12T00:43:53.522Z</lastmod>
@@ -12,13 +19,6 @@
     <loc>https://boxizen.github.io/2016/09/11/electron/</loc>
     
     <lastmod>2018-10-30T04:22:37.074Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://boxizen.github.io/photos/index.html</loc>
-    
-    <lastmod>2018-08-22T14:34:44.644Z</lastmod>
     
   </url>
   
